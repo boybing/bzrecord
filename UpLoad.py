@@ -30,6 +30,13 @@ def documentDelete(path):
 
 while 1:
     try:
+        try:
+            if os.environ['ADDRESS']=="":
+                print("empty")
+                break
+        except:
+            print("erro")
+            break
         ls = os.listdir(os.path.join(os.getcwd(),"tsdir"))
         print(os.path.join(os.getcwd(),"tsdir"))
 

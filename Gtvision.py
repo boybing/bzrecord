@@ -121,6 +121,13 @@ name=''
 os.chdir("tsdir")
 while 1:
     try:
+        try:
+            if os.environ['ADDRESS']=="":
+                print("empty")
+                break
+        except:
+            print("erro")
+            break
         mktsfile(address=os.environ['ADDRESS'])
         time.sleep(3)
     except Exception as e:
