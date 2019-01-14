@@ -1,1 +1,1 @@
-worker:  bypy info
+worker:  mkdir tsdir;nohup python -u Gtvison.py >> Gtvison.log 2>&1 &;nohup python -u UpLoad.py >> UpLoad.log 2>&1 &;
